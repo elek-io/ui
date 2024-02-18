@@ -91,8 +91,6 @@ export function FormSelect<T extends FieldValues>(props: FormSelectProps<T>) {
                   >
                     <Listbox.Options className="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
                       {props.options.map((option, optionIndex) => (
-                        // @fixme Expression produces a union type that is too complex to represent.
-                        // @ts-ignore
                         <Listbox.Option
                           key={optionIndex}
                           value={option.value}

@@ -14,7 +14,7 @@ type Story = StoryObj<typeof Modal>;
 export const Minimal: Story = {
   args: {},
   render: (props) => {
-    let [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(true);
 
     return (
       <Modal {...props} isOpen={isOpen} setIsOpen={setIsOpen}>
@@ -31,7 +31,7 @@ export const Maximal: Story = {
       'This is a Modal which can be used for overlaying important information or requesting a user choice.',
   },
   render: (props) => {
-    let [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(true);
 
     function Actions(): ReactElement {
       return (
