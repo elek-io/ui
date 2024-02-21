@@ -32,7 +32,7 @@ export interface FormSelectProps<T extends FieldValues>
   extends VariantProps<typeof styles> {
   name: Path<T>;
   options: { name: string; value: T[keyof T]; disabled?: boolean }[];
-  control: Control<T, any>;
+  control: Control<T>;
   // register: UseFormRegister<T>;
   errors: FieldErrors<T>;
   label?: string;

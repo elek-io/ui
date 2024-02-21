@@ -27,7 +27,7 @@ const styles = cva('', {
 export interface FormToggleProps<T extends FieldValues>
   extends VariantProps<typeof styles> {
   name: Path<T>;
-  control: Control<T, any>;
+  control: Control<T>;
   // register: UseFormRegister<T>;
   errors: FieldErrors<T>;
   label?: string;
