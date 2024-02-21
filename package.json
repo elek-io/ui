@@ -1,6 +1,6 @@
 {
   "name": "ui",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "UI library (React) and design system (Storybook) used inside elek.io Client to render the GUI.",
   "homepage": "https://elek.io",
   "repository": "https://github.com/elek-io/ui",
