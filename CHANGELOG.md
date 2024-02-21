@@ -1,5 +1,11 @@
 # ui
 
+## 0.1.2
+
+### Patch Changes
+
+- 0ff2f53: Added type definition to dist and fixed exported file names
+
 ## 0.1.1
 
 ### Patch Changes
