@@ -1,5 +1,11 @@
 # ui
 
+## 0.1.3
+
+### Patch Changes
+
+- d4b5758: Adding build step to CD should provide release with dist files
+
 ## 0.1.2
 
 ### Patch Changes
