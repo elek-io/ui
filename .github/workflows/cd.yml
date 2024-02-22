@@ -23,6 +23,8 @@ jobs:
         run: npm ic
       - name: Run linter
         run: npm run lint
+      - name: Build
+        run: npm run build
       - name: Create pull request or publish to NPM
         uses: changesets/action@v1
         with:
