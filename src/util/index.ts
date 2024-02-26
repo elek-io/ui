@@ -1,4 +1,5 @@
 import type { SupportedLanguage } from '@elek-io/shared';
+import { clsx, type ClassValue } from 'clsx';
 import { format, formatDistanceToNow, fromUnixTime } from 'date-fns';
 import {
   bg,
@@ -32,6 +33,7 @@ import type {
   RefAttributes,
   SVGProps,
 } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 export type Icon = ForwardRefExoticComponent<
   PropsWithoutRef<SVGProps<SVGSVGElement>> & {
@@ -117,12 +119,6 @@ export function formatBytes(bytes: number) {
   );
 }
 
-/**
- * Often used by tailwind components to join multiple strings of classes
- *
- * @param classes Array of classes to join
- * @returns Joined class string
- */
-export function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ');
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
 }

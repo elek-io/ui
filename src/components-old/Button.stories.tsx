@@ -4,7 +4,7 @@ import { Avatar } from './Avatar.tsx';
 import { Button } from './Button.tsx';
 
 const meta: Meta<typeof Button> = {
-  title: 'Components/Button',
+  title: 'Components/Button-Old',
   component: Button,
 };
 
