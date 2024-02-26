@@ -1,13 +1,16 @@
 import type { Project, User } from '@elek-io/shared';
 import { cva, type VariantProps } from 'class-variance-authority';
 import React, { useState, type ReactNode } from 'react';
-import { Header, type UserNavigationItemGroup } from '../components/Header.tsx';
-import type { NotificationProps } from '../components/Notification.tsx';
-import { NotificationContainer } from '../components/NotificationContainer.tsx';
+import {
+  Header,
+  type UserNavigationItemGroup,
+} from '../components-old/Header.tsx';
+import type { NotificationProps } from '../components-old/Notification.tsx';
+import { NotificationContainer } from '../components-old/NotificationContainer.tsx';
 import {
   Sidebar,
   type SidebarNavigationItemGroup,
-} from '../components/Sidebar.tsx';
+} from '../components-old/Sidebar.tsx';
 
 const styles = cva('');
 
